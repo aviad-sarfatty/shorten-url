@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: url-shortener
+
+  datasource:
+    url: jdbc:mysql://10.100.102.51:3306/shorten_url
+    username: appuser
+    password: appUs3r!@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update  # Controls schema generation (update, validate, create, create-drop)
